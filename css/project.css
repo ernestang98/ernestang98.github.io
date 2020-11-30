@@ -228,7 +228,7 @@ nav {
 }
 
 .slide:nth-child(2) {
-  background-image: url(../img/churn.jpg);
+  background-image: url(../img/ep.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -242,7 +242,7 @@ nav {
 }
 
 .slide:nth-child(4) {
-  background-image: url(../img/ep.png);
+  background-image: url(../img/churn.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
