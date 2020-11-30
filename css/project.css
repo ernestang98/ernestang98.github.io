@@ -1,0 +1,256 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  --ff-teriary: 'Source Sans Pro', sans-serif;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark:#303030;
+  --clr-accent: #539bf1;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.125);
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.255rem;
+  }
+}
+
+body {
+  background: var(--clr-dark);
+  /*background-image: url(../img/bg2.jpg);*/
+  /*color: var(--clr-dark);*/
+  color: white;
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+strong { font-weight: var(--fw-bold); }
+
+nav {
+  position: fixed;
+  font-family: var(--ff-teriary);
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  width: 600px;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.slide .content li {
+  font-size: 15px;
+}
+
+.slide .content p {
+  font-size: 15px;
+}
+
+.slide .content a {
+  font-size: 15px;
+  z-index: 3;
+}
+
+.slide.current .content {
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+  opacity: 1;
+  z-index: 3;
+}
+
+.carousel__nav {
+  position: absolute;
+  bottom: 0;
+  left: 42.5%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel__indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: rgba(0,0,0,0.3);
+  margin: 0 12px;
+}
+
+.carousel__indicator.current-slide {
+  background: rgba(0,0,0,0.75);
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  z-index: 4;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  z-index: 4;
+}
+
+.buttons button {
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8.5px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: white;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .slide .content {
+    position: absolute;
+    bottom: -0px;
+    left: -600px;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+  }
+  .slide.current .content {
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+    opacity: 1;
+    z-index: 3;
+  }
+  .slide .content h1 {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+
+  .slide .content li {
+    font-size: 10px;
+  }
+
+  .slide .content p {
+    font-size: 10px;
+  }
+
+  .slide .content a {
+    font-size: 10px;
+    z-index: 3;
+  }
+  .carousel__nav {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    /*right: 50%;*/
+    background: transparent;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,0.3);
+    margin: 0 5px;
+  }
+
+  .carousel__indicator.current-slide {
+    background: rgba(0,0,0,0.75);
+  }
+}
+
+.slide:first-child {
+  background-image: url(../img/website.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.slide:nth-child(2) {
+  background-image: url(../img/churn.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide:nth-child(3) {
+  background-image: url(../img/fdb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide:nth-child(4) {
+  background-image: url(../img/ep.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slide:nth-child(5) {
+  background-image: url(../img/menu.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
