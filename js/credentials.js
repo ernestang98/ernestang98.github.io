@@ -264,7 +264,7 @@ nextReq.onsuccess = e => {
 
 
 // Some random colors
-const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+const colors = ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff"];
 
 const numBalls = 50;
 const balls = [];
@@ -278,7 +278,6 @@ for (let i = 0; i < numBalls; i++) {
   ball.style.transform = `scale(${Math.random()})`;
   ball.style.width = `${Math.random()}em`;
   ball.style.height = ball.style.width;
-
   balls.push(ball);
   document.body.append(ball);
 }
@@ -305,18 +304,15 @@ balls.forEach((el, i, ra) => {
   );
 });
 
+var boxes = document.getElementById("boxes");
 
+var loading = document.getElementById("modal-loading");
 
-
-
-
-
-
-
-
-
+var content = document.getElementById("modal-content");
 
 var modal = document.getElementById("myModal");
+
+var modal2 = document.getElementById("myModal2");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -324,19 +320,71 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+
+var in_dom = document.body.contains(boxes);
+
+var observer = new MutationObserver(function(mutations) {
+  if (document.body.contains(boxes)) {
+    if (!in_dom) {
+      console.log("element inserted");
+    }
+    in_dom = true;
+  } else if (in_dom) {
+    in_dom = false;
+    console.log("element removed");
+    btn.onclick = function() {
+      intervals[1] = setTimeout(function() {
+        modal2.style.display = "block";
+      }, 500)
+    }
+  }
+});
+observer.observe(document.body, {childList: true});
+
+var intervals = {};
+
 // When the user clicks the button, open the modal
 btn.onclick = function() {
-  modal.style.display = "block";
+  intervals[0] = setTimeout(function() {
+    modal.style.display = "block";
+  }, 500)
+
+  intervals[1] = setTimeout(function() {
+    modal2.style.display = "block";
+  }, 3000)
+
+  intervals[2] = setTimeout(function() {
+    $('#boxes').remove();
+    $('#loading').remove();
+    $('#myModal').remove();
+  }, 3000)
+}
+
+const clearAll = function() {
+  clearInterval(intervals[0])
+  clearInterval(intervals[1])
+  clearInterval(intervals[2])
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  modal.style.display = "none";
+  modal2.style.display = "none";
+  clearAll()
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target === modal2) {
+    modal2.style.display = "none";
+    clearAll()
   }
+  if (event.target === modal) {
+    modal.style.display = "none";
+    clearAll()
+  }
+}
+
+loading.onclick = function() {
+  modal.style.display = "none";
+  clearAll()
 }
