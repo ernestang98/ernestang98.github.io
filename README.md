@@ -1,4 +1,4 @@
 # Personal Portfolio Website
 
-Droplets Deployment: www.ernestang.site  
+Droplets Deployment: https://ernestang.site  
 Github Pages: https://ernestang98.github.io/Portfolio-Website
