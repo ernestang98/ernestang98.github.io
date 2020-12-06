@@ -4,31 +4,31 @@ const noteNTU = {
   "Location": "Singapore, SG",
   "Enrollment": "August 2019 - PRESENT",
   "Degree": {
-    1: "Bachelor of Business",
-    2: "Bachelor of Engineering (Computer Science)"
+    1: "Bachelor of Business (Specialisation in Business Analytics)",
+    2: "Bachelor of Engineering, Computer Science (Specialisation in Artificial Intelligence)"
   },
   "Modules": {
     1: {
-      1: "Visual & Predictive Analytics (R)",
-      2: "Statistics & Analysis (R)",
-      3: "Designing & Developing Databases (UML, MongoDB, mySQL)",
-      4: "Introduction to Accounting Data Analytics & Visualisation (Tableau, Excel)",
-      5: "Management & Financial Accounting",
-      6: "Business Law",
-      7: "Communication Studies",
-      8: "Organisational Behavior"
+      1: "Organisational Behavior",
+      2: "Communication Studies",
+      3: "Business Law",
+      4: "Management & Financial Accounting",
+      5: "Introduction to Accounting Data Analytics & Visualisation (Tableau, Excel)",
+      6: "Designing & Developing Databases (UML, MongoDB, mySQL)",
+      7: "Statistics & Analysis (R)",
+      8: "Visual & Predictive Analytics (R)",
     },
     2: {
-      1: "Introduction to Computational Thinking (Python, Raspberry Pi, Sense HAT, Tkinter)",
-      3: "Introduction to Data Science and Artificial Intelligence (Python, Pandas)",
-      2: "Data Structures (C)",
-      4: "Algorithms (Python, Java, C)",
-      5: "Object Oriented Programming (Java, C++, UML)",
-      6: "Computer Graphics and Visualisation (VRML)",
-      7: "Computer Organisation & Architecture (C, Arduino)",
-      8: "Digital Logic (Verilog)",
-      9: "Engineering Mathematics",
-      10: "Discrete Mathematics",
+      1: "Discrete Mathematics",
+      2: "Engineering Mathematics",
+      3: "Digital Logic (Verilog)",
+      4: "Computer Organisation & Architecture (C, Arduino)",
+      5: "Computer Graphics and Visualisation (VRML)",
+      6: "Object Oriented Programming (Java, C++, UML)",
+      7: "Algorithms (Python, Java, C)",
+      8: "Data Structures (C)",
+      9: "Introduction to Data Science and Artificial Intelligence (Python, Pandas)",
+      10: "Introduction to Computational Thinking (Python, Raspberry Pi, Sense HAT, Tkinter)",
     }
   }
 }
@@ -38,46 +38,57 @@ const noteOthers = {
   "Location": "Singapore, SG",
   "Enrollment": "April 2020 - PRESENT",
   "Degree": {
-    1: "Kaplan Higher Education Academy",
+    1: "EC-Council",
     2: "Smartcademy",
-    3: "KnowledgeHut"
+    3: "KnowledgeHut",
+    4: "Freecodecamp (Click <a href='https://www.freecodecamp.org/ernestang98' target='_blank'>here</a> to view profile)",
+    5: "Coursera (Click <a href='https://www.coursera.org/user/661b2ed42b7548b3b256821988091dad' target='_blank'>here</a> to view profile)",
+    6: "Codecademy (Click <a href='https://www.codecademy.com/profiles/ernieang6887927217' target='_blank'>here</a> to view profile)"
   },
   "Modules": {
     1: {
-      1: "",
-      2: "EC-Council - Certified Ethical Hacker"
+      1: "Certified Ethical Hacker"
     },
     2: {
-      1: "",
-      2: "Intro to Web App Development",
-      3: "React Native 101"
+      1: "Intro to Web App Development",
+      2: "React Native 101"
     },
     3: {
-      1: "",
-      2: "Web Development Using React"
+      1: "Web Development Using React"
+    },
+    4: {
+      1: "Responsive Web Design Certification",
+      2: "JavaScript Algorithms and Data Structures Certification",
+    },
+    5: {
+      1: "IT Automation with Python Certification - Google",
+      2: "IT Support Certification - Google",
+      3: "Data Science Specialization - Johns Hopkins University",
+      4: "Full Stack Web Development with React - The Hong Kong University of Science and Technology",
+      5: "Open Source Software Development, Linux, Git - The Linux Foundation",
+      6: "Building Containerized Applications on AWS - Amazon Web Services",
+    },
+    6: {
+      1: "PHP",
+      2: "React",
+      3: "JavaScript",
+      4: "CSS",
+      5: "SQL",
+      6: "C++",
+      7: "HTML",
+      8: "Python",
     }
   }
 }
 const noteE = {
   "key": Math.floor(Math.random() * Math.pow(10, 20)),
-  "Institution": "E-Learning (Online Courses)",
+  "Institution": "Work Experience",
   "Location": "Singapore, SG",
   "Enrollment": "April 2019 - PRESENT",
   "Degree": {
-    1: "Freecodecamp",
-    2: "Codecademy",
-    3: "Coursera"
+
   },
   "Modules": {
-    1: {
-
-    },
-    2: {
-
-    },
-    3: {
-
-    }
 
   }
 }
@@ -115,8 +126,6 @@ req.onsuccess = e => {
   }
 }
 
-let details = 0;
-
 function numKeys(o) {
   return Object.keys(o).length;
 }
@@ -130,137 +139,47 @@ nextReq.onsuccess = e => {
   allRecords.onsuccess = function() {
     let data = allRecords.result;
     $(function() {
-      let temp = 0;
       // for each school & its degree
-      // for (let i = 0; i < data.length; i++) {
-      //   const school = data[i]["Institution"]
-      //   const loc = data[i]["Location"]
-      //   const enroll = data[i]["Enrollment"]
-      //   const degree = data[i]["Degree"]
-      //   const modules = data[i]["Modules"]
-      //   const length = numKeys(degree)
-      //   for (let k = 1; k <= length; k++) {
-      //     let size = Object.keys(modules[k]).length;
-      //     for (let o = 1; o <= size; o++) {
-      //       $('<p>' + modules[k][o] + '</p>').prependTo(".details" + i);
-      //     }
-      //     $('<p>' + degree[k] + '</p>').prependTo(".details" + i);
-      //   }
-      //   $('<p>' + loc + ', ' + enroll + '</p>').prependTo(".details" + i);
-      //   $('<p>' + school + '</p>').prependTo(".details" + i);
-      // }
+      for (let i = 0; i < data.length; i++) {
+        const school = data[i]["Institution"]
+        const loc = data[i]["Location"]
+        const enroll = data[i]["Enrollment"]
+        const degree = data[i]["Degree"]
+        const modules = data[i]["Modules"]
+        const length = numKeys(degree)
+
+        if (data[i]["Institution"] === "Nanyang Technological University") {
+          // num of degrees
+          for (let k = 1; k <= length; k++) {
+            let size = Object.keys(modules[k]).length;
+            // num of modules
+            for (let o = 1; o <= size; o++) {
+              $('<p>' + modules[k][o] + '</p>').prependTo(".inner");
+            }
+            $('<p><strong>' + degree[k] + '</strong></p>').prependTo(".inner");
+          }
+
+          $('<p class="text-center">' + loc + ', ' + enroll + '</p>').prependTo(".innerS");
+          $('<p class="text-center">' + school + '</p>').prependTo(".innerS");
+        }
+        // else if (data[i]["Institution"] === "Others (External Vendors)") {
+        //   for (let k = 1; k <= length; k++) {
+        //     let size = Object.keys(modules[k]).length;
+        //     // num of modules
+        //     for (let o = 1; o <= size; o++) {
+        //       console.log(modules[k][o])
+        //       $('<p>' + modules[k][o] + '</p>').prependTo(".inner2");
+        //     }
+        //     $('<p><strong>' + degree[k] + '</strong></p>').prependTo(".inner2");
+        //   }
+        //
+        //   $('<p class="text-center">' + loc + ', ' + enroll + '</p>').prependTo(".innerS2");
+        //   $('<p class="text-center">' + school + '</p>').prependTo(".innerS2");
+        // }
+      }
     });
   };
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const createDBButton = document.getElementById("createButton")
-// createDBButton.addEventListener("click", createDB)
-// const createNoteButton = document.getElementById("createNote")
-// createNoteButton.addEventListener("click", createNote)
-// const viewNoteButton = document.getElementById("viewNote")
-// viewNoteButton.addEventListener("click", viewNote)
-//
-// function viewNote() {
-//   const req = indexedDB.open("Portfolio DB")
-//   req.onsuccess = e => {
-//     const db = e.target.result;
-//     const tx = db.transaction("info", "readonly")
-//     const notes = tx.objectStore("info")
-//     const req1 = notes.openCursor()
-//     req1.onsuccess = e => {
-//         const cursor = e.target.result;
-//         if (cursor) {
-//             cursor.continue();
-//             console.log(cursor.value.text)
-//         }
-//     }
-//   }
-// }
-//
-// function createNote() {
-//   const req = indexedDB.open("database2")
-//   req.onsuccess = e => {
-//     const db = e.target.result;
-//     const note = {
-//       key: Math.floor(Math.random() * 100000000000),
-//       id: "id1",
-//       text: 'This is my note'
-//     }
-//     const tx = db.transaction("notes1", "readwrite")
-//     tx.onerror = e => {
-//       alert(e.target.error + "shit")
-//     }
-//     const rd = tx.objectStore("notes1")
-//     rd.add(note)
-//     alert("Success added")
-//   }
-// }
-//
-// function createDB() {
-//   try {
-//     console.log("createDB Success")
-//     const dbName = document.getElementById("dbName").value
-//     const dbVersion = document.getElementById("dbVersion").value
-//     const req = indexedDB.open(dbName, dbVersion)
-//     req.onupgradeneeded = e => {
-//       const db = e.target.result;
-//       alert(db.name + " version is upgraded to " + db.version)
-//       const note1 = db.createObjectStore("notes1", {keyPath: "key"})
-//     }
-//     req.onsuccess = e => {
-//       const db = e.target.result;
-//       alert("Database " + db.name + " called!")
-//     }
-//     req.onerror = e => {
-//       console.log("req.error Success")
-//       alert("error called: " + e.target.error)
-//     }
-//
-//   } catch (e) {
-//     alert(e)
-//   }
-// }
-//
-// $(function() {
-//
-//   //Add event listener to dropdown with class radio-line
-//   $('.radio-line').change(function() {
-//
-//     //Get the text of the selected option. Not its value
-//     var text = $(this).find("option:selected").text();
-//
-//     //Update the text of h1
-//     $('h2').text(text);
-//
-//   });
-//
-// });
 
 
 // Some random colors
@@ -314,12 +233,23 @@ var modal = document.getElementById("myModal");
 
 var modal2 = document.getElementById("myModal2");
 
+var modal3 = document.getElementById("myModal3");
+
+var modal4 = document.getElementById("myModal4");
+
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
+
+var btn2 = document.getElementById("myBtn2");
+
+var btn3 = document.getElementById("myBtn3");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+var span2 = document.getElementsByClassName("close")[1];
+
+var span3 = document.getElementsByClassName("close")[2];
 
 var in_dom = document.body.contains(boxes);
 
@@ -337,8 +267,19 @@ var observer = new MutationObserver(function(mutations) {
         modal2.style.display = "block";
       }, 500)
     }
+    btn2.onclick = function() {
+      intervals[3] = setTimeout(function() {
+        modal3.style.display = "block";
+      }, 500)
+    }
+    btn3.onclick = function() {
+      intervals[4] = setTimeout(function() {
+        modal4.style.display = "block";
+      }, 500)
+    }
   }
 });
+
 observer.observe(document.body, {childList: true});
 
 var intervals = {};
@@ -360,15 +301,59 @@ btn.onclick = function() {
   }, 3000)
 }
 
+btn2.onclick = function() {
+  intervals[0] = setTimeout(function() {
+    modal.style.display = "block";
+  }, 500)
+
+  intervals[3] = setTimeout(function() {
+    modal3.style.display = "block";
+  }, 3000)
+
+  intervals[2] = setTimeout(function() {
+    $('#boxes').remove();
+    $('#loading').remove();
+    $('#myModal').remove();
+  }, 3000)
+}
+
+btn3.onclick = function() {
+  intervals[0] = setTimeout(function() {
+    modal.style.display = "block";
+  }, 500)
+
+  intervals[4] = setTimeout(function() {
+    modal4.style.display = "block";
+  }, 3000)
+
+  intervals[2] = setTimeout(function() {
+    $('#boxes').remove();
+    $('#loading').remove();
+    $('#myModal').remove();
+  }, 3000)
+}
+
 const clearAll = function() {
   clearInterval(intervals[0])
   clearInterval(intervals[1])
   clearInterval(intervals[2])
+  clearInterval(intervals[3])
+  clearInterval(intervals[4])
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal2.style.display = "none";
+  clearAll()
+}
+
+span2.onclick = function() {
+  modal3.style.display = "none";
+  clearAll()
+}
+
+span3.onclick = function() {
+  modal4.style.display = "none";
   clearAll()
 }
 
