@@ -25,10 +25,10 @@ const noteNTU = {
       4: "Computer Organisation & Architecture (C, Arduino)",
       5: "Computer Graphics and Visualisation (VRML)",
       6: "Object Oriented Programming (Java, C++, UML)",
-      7: "Algorithms (Python, Java, C)",
+      7: "Algorithms (Sorting & Graphs)",
       8: "Data Structures (C)",
       9: "Introduction to Data Science and Artificial Intelligence (Python, Pandas)",
-      10: "Introduction to Computational Thinking (Python, Raspberry Pi, Sense HAT, Tkinter)",
+      10: "Introduction to Computational Thinking (Python, Raspberry Pi, SenseHAT, Tkinter)",
     }
   }
 }
