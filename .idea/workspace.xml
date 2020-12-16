@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8b131ac3-5860-43b9-a6cd-7f918fb7edfa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/credentials.html" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/credentials.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/credentials.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/project.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/project.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/credentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/credentials.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l1A7LTQzmVCIIrp1SjXlOyvivl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b131ac3-5860-43b9-a6cd-7f918fb7edfa" name="Default Changelist" comment="" />
+      <created>1606754054598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606754054598</updated>
+      <workItem from="1606754055763" duration="477000" />
+      <workItem from="1607013123442" duration="3160000" />
+      <workItem from="1607158125735" duration="3332000" />
+      <workItem from="1607190477884" duration="2000" />
+      <workItem from="1607254417641" duration="9707000" />
+      <workItem from="1607414182552" duration="1165000" />
+      <workItem from="1607423955141" duration="6506000" />
+      <workItem from="1607436263806" duration="167000" />
+      <workItem from="1607598185108" duration="3557000" />
+      <workItem from="1607828928760" duration="840000" />
+      <workItem from="1607832836170" duration="1153000" />
+      <workItem from="1608116148066" duration="916000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607598443218">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1607598443218" />
+  </component>
+</project>

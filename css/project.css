@@ -9,7 +9,6 @@
   --ff-secondary: 'Source Code Pro', monospace;
   --ff-teriary: 'Source Sans Pro', sans-serif;
 
-  --fw-reg: 300;
   --fw-bold: 900;
 
   --clr-light: #fff;
@@ -36,7 +35,11 @@
 
 body {
   background: var(--clr-dark);
-  /*background-image: url(../img/bg2.jpg);*/
+  /*background-image: url(https://cdn.hipwallpaper.com/i/9/28/kyTIf9.jpeg);*/
+  /*background-repeat: no-repeat;*/
+  /*background-attachment: fixed;*/
+  /*background-position: center;*/
+  /*background-size: auto;*/
   /*color: var(--clr-dark);*/
   color: white;
   margin: 0;

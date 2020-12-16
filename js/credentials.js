@@ -22,7 +22,7 @@ const noteNTU = {
       1: "Discrete Mathematics",
       2: "Engineering Mathematics",
       3: "Digital Logic (Verilog)",
-      4: "Computer Organisation & Architecture (C, Arduino)",
+      4: "Computer Organisation & Architecture (ARM Assembly Language)",
       5: "Computer Graphics and Visualisation (VRML)",
       6: "Object Oriented Programming (Java, C++, UML)",
       7: "Algorithms (Sorting & Graphs)",
@@ -365,6 +365,10 @@ window.onclick = function(event) {
   }
   if (event.target === modal) {
     modal.style.display = "none";
+    clearAll()
+  }
+  if (event.target === modal3) {
+    modal3.style.display = "none";
     clearAll()
   }
 }
