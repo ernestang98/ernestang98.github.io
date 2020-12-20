@@ -3,6 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8b131ac3-5860-43b9-a6cd-7f918fb7edfa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/credentials.html" beforeDir="false" afterPath="$PROJECT_DIR$/credentials.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/credentials.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/credentials.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/credentials.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/credentials.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +48,8 @@
       <workItem from="1607828928760" duration="840000" />
       <workItem from="1607832836170" duration="1153000" />
       <workItem from="1608116148066" duration="1397000" />
+      <workItem from="1608394723723" duration="2000" />
+      <workItem from="1608440430631" duration="2626000" />
     </task>
     <servers />
   </component>
@@ -50,6 +57,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="385" y="210" key="run.anything.popup" timestamp="1608442330750">
+      <screen x="0" y="23" width="1440" height="838" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.23.1440.838@0.23.1440.838" timestamp="1608442330750" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1607598443218">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
