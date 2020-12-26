@@ -49,6 +49,10 @@ prev.addEventListener('click', e => {
   }
 })
 
+
+
+
+
 const track = document.querySelector('.Slider');
 const slides_gallery = Array.from(track.children);
 const dotsNav = document.querySelector('.carousel__nav');
@@ -89,8 +93,8 @@ dotsNav.addEventListener('click', e => {
   const currentDot = dotsNav.querySelector('.current-slide');
   const targetIndex = dots.findIndex(dot => dot === targetDot);
   const targetSlide = slides_gallery[targetIndex];
+  updateDots2(currentDot, targetDot);
   moveToSlide(track, currentSlide, targetSlide)
-  updateDots(currentDot, targetDot);
 })
 
 if (auto) {
