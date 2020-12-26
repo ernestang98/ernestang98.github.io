@@ -260,6 +260,10 @@ if (Modernizr.indexeddb) {
       modal3.style.display = "none";
       clearAll()
     }
+    if (event.target === modal4) {
+      modal4.style.display = "none";
+      clearAll()
+    }
   }
 
   loading.onclick = function() {
