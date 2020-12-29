@@ -33,8 +33,20 @@
   }
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
-  background: var(--clr-dark);
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  background: #ffffff;
   /*background-image: url(https://cdn.hipwallpaper.com/i/9/28/kyTIf9.jpeg);*/
   /*background-repeat: no-repeat;*/
   /*background-attachment: fixed;*/
