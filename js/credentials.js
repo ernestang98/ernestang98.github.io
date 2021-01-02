@@ -1,3 +1,5 @@
+
+
 if (Modernizr.indexeddb) {
   const noteNTU = {
     "key": Math.floor(Math.random() * Math.pow(10, 20)),

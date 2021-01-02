@@ -1,3 +1,4 @@
+
 function showText(text){
   document.getElementById("text").innerHTML=text;
 }
