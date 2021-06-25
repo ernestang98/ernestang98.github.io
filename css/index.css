@@ -23,6 +23,10 @@
 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #about {
   /*background-image: url("https://cdn.shopify.com/s/files/1/0603/7977/products/TheRoadLessTraveled_3ee79ed9-e476-4d96-802a-ce9160c8ef2d_600x.png?v=1559423537");*/
   /*background-position: center;*/
