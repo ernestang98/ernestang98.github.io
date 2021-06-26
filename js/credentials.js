@@ -1,4 +1,5 @@
-
+const INTERVAL = Math.floor(Math.random() * 6) * 1000;
+console.log(INTERVAL)
 
 if (Modernizr.indexeddb) {
   const noteNTU = {
@@ -183,13 +184,13 @@ if (Modernizr.indexeddb) {
 
     intervals[1] = setTimeout(function() {
       modal2.style.display = "block";
-    }, 3000)
+    }, INTERVAL)
 
     intervals[2] = setTimeout(function() {
       $('#boxes').remove();
       $('#loading').remove();
       $('#myModal').remove();
-    }, 3000)
+    }, INTERVAL)
   }
 
   btn2.onclick = function() {
@@ -199,13 +200,13 @@ if (Modernizr.indexeddb) {
 
     intervals[3] = setTimeout(function() {
       modal3.style.display = "block";
-    }, 3000)
+    }, INTERVAL)
 
     intervals[2] = setTimeout(function() {
       $('#boxes').remove();
       $('#loading').remove();
       $('#myModal').remove();
-    }, 3000)
+    }, INTERVAL)
   }
 
   btn3.onclick = function() {
@@ -215,13 +216,13 @@ if (Modernizr.indexeddb) {
 
     intervals[4] = setTimeout(function() {
       modal4.style.display = "block";
-    }, 3000)
+    }, INTERVAL)
 
     intervals[2] = setTimeout(function() {
       $('#boxes').remove();
       $('#loading').remove();
       $('#myModal').remove();
-    }, 3000)
+    }, INTERVAL)
   }
 
   const clearAll = function() {

@@ -22,6 +22,7 @@ const nextSlide = () => {
 }
 
 const prevSlide = () => {
+  console.log("im the issue!")
   const current = document.querySelector('.current');
   current.classList.remove('current');
   if (current.previousElementSibling) {
@@ -30,7 +31,12 @@ const prevSlide = () => {
     slides[slides.length - 1].classList.add('current');
   }
   const currentDot = dotsNav.querySelector('.current-slide');
-  const prevDot = currentDot.previousElementSibling;
+  if (currentDot.previousElementSibling) {
+    prevDot = currentDot.previousElementSibling;
+  }
+  else {
+    prevDot = dotsNav.lastElementChild;
+  }
   updateDots2(currentDot, prevDot);
   setTimeout(() => current.classList.remove('current'));
 }
@@ -67,6 +73,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 }
 
 const updateDots = (currentDot, targetDot) => {
+  // there is no currentDot
   if (targetDot === currentDot) {
     return 0;
   }  else {
@@ -80,10 +87,18 @@ const updateDots = (currentDot, targetDot) => {
 }
 
 const updateDots2 = (currentDot, targetDot) => {
+  // console.log("currentdot is: " + currentDot.outerHTML)
+  // console.log("targetdot is: " + targetDot.outerHTML)
+  var isFirst = false;
+  if ($(".current-slide").is( ':first-child' )) {
+      isFirst = true
+  }
   currentDot.classList.remove('current-slide');
-  if (currentDot.previousElementSibling) {
+  if (currentDot.previousElementSibling || isFirst) {
+    console.log('this logic is happening')
     targetDot.classList.add('current-slide');
   } else {
+    console.log('second logic')
     dots[dots.length - 1].classList.add('current-slide');
   }
 }
@@ -91,9 +106,11 @@ const updateDots2 = (currentDot, targetDot) => {
 dotsNav.addEventListener('click', e => {
   const targetDot = e.target.closest('button');
   if (!targetDot) return;
+  // if the dot and the currentslide is at 1, then if you click on any other dot, it goes to the zlide but it does not update the dot, updates it to the last dot
   const currentSlide = track.querySelector('.current');
   const currentDot = dotsNav.querySelector('.current-slide');
   const targetIndex = dots.findIndex(dot => dot === targetDot);
+  console.log(targetIndex)
   const targetSlide = slides_gallery[targetIndex];
   updateDots2(currentDot, targetDot);
   moveToSlide(track, currentSlide, targetSlide)
