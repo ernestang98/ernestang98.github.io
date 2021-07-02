@@ -126,6 +126,31 @@ nav {
   position: fixed;
 }
 
+.nav-item, .navbar-brand {
+  margin: 0 1em;
+}
+
+.dumb-fix-pc {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+.dumb-fix-tablet {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+@media (max-width: 990px) {
+  .dumb-fix-tablet {
+    display: block
+  }
+  .dumb-fix-pc {
+    display: none
+  }
+}
+
 
 .intro {
   position: relative;
