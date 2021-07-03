@@ -1,0 +1,1 @@
+global.AOS = global.AOS = require('../node_modules/aos')
