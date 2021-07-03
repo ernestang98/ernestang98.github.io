@@ -10,18 +10,19 @@
     "@testing-library/jest-dom": "^5.5.0",
     "aos": "^2.3.4",
     "babel-jest": "^25.5.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "cypress": "^7.6.0",
     "jest": "^25.3.0",
+    "jest-html-reporter": "^3.4.1",
     "regenerator-runtime": "^0.13.5",
-    "serve": "^11.3.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2"
+    "serve": "^11.3.0"
   },
   "scripts": {
     "test": "jest --verbose ./test"
   },
   "jest": {
     "setupFiles": [
-      "./test/globals.js"
+      "./js/globals.js"
     ]
   },
   "repository": {
