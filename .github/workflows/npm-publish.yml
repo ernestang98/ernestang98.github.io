@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Portfolio CI Pipeline
 
 on:
   push:
