@@ -1,39 +1,27 @@
 {
-  "name": "ernest-portfolio",
-  "version": "1.0.0",
-  "description": "Droplets Deployment (DEPRACATED): https://ernestang.site <br/> Netlify Deployment: https://ernestang.site <br/> Github Pages: https://ernestang98.github.io",
-  "main": "index.js",
-  "dependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/preset-env": "^7.9.5",
-    "@testing-library/dom": "^7.2.1",
-    "@testing-library/jest-dom": "^5.5.0",
-    "aos": "^2.3.4",
-    "babel-jest": "^25.5.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
-    "cypress": "^7.6.0",
-    "jest": "^25.3.0",
-    "jest-html-reporter": "^3.4.1",
-    "jsdom": "^15.2.1",
-    "regenerator-runtime": "^0.13.5",
-    "serve": "^11.3.0"
-  },
+  "name": "nextjs-tailwindcss-portfolio",
+  "private": true,
   "scripts": {
-    "test": "jest --verbose ./test"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "jest": {
-    "setupFiles": [
-      "./js/globals.js"
-    ]
+  "dependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "framer-motion": "^5.5.3",
+    "next": "^13.0.5",
+    "react": "^18.2.0",
+    "react-countup": "^6.1.1",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.3.1",
+    "uuid": "^8.3.2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ernestang98/ernestang98.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ernestang98/ernestang98.github.io/issues"
-  },
-  "homepage": "https://github.com/ernestang98/ernestang98.github.io#readme"
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "^13.0.5",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.5"
+  }
 }
