@@ -1,27 +1,33 @@
 {
-  "name": "nextjs-tailwindcss-portfolio",
+  "name": "nextjs-portfolio-starter-template",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "export": "next export"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.4.0",
-    "framer-motion": "^5.5.3",
-    "next": "^13.0.5",
-    "react": "^18.2.0",
-    "react-countup": "^6.1.1",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.3.1",
-    "uuid": "^8.3.2"
+    "@tailwindcss/line-clamp": "^0.2.1",
+    "framer-motion": "^4.1.17",
+    "next": "latest",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.7.0",
+    "next-themes": "^0.0.15",
+    "react": "^18.2.1",
+    "react-dom": "^18.2.1",
+    "react-icons": "^4.9.0",
+    "react-responsive-modal": "^6.2.0",
+    "react-scroll": "^1.8.2",
+    "react-social-icons": "^5.15.0",
+    "react-toggle-dark-mode": "^1.0.4",
+    "react-typed": "^1.2.0",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
-    "eslint": "8.4.1",
-    "eslint-config-next": "^13.0.5",
-    "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.5"
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.10",
+    "tailwindcss": "^2.1.1"
   }
 }
