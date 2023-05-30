@@ -15,7 +15,7 @@ function TimeLineItem({
           <div className="bg-gray-800 h-1 w-4 items-center  ml-4 mt-1"></div>
         </div>
         <div className="flex-1 ml-4 z-10 font-medium">
-          <div className="order-1 space-y-2 bg-transparent rounded-lg shadow-only transition-ease lg:w-12/12 px-6 py-4 border-2 border-indigo-100 flex">
+          <div className="order-1 space-y-2 bg-transparent rounded-lg shadow-only transition-ease lg:w-6/12 px-6 py-4 border-2 border-indigo-100 flex">
             <div className="">
               <h3 className="mb-3 font-bold text-custom-dark text-2xl">
                 {degree && degree}

@@ -3,24 +3,24 @@
     "education": [
       {
         "id": 1,
-        "university": "University X",
-        "degree": "Computer Engineering",
-        "date": "22-01-2022",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        "university": "Nanyang Technological University",
+        "degree": "Bachelor of Engineering in Computer Science",
+        "date": "2019 - 2023",
+        "description": "Full-Time Programme"
       },
       {
         "id": 2,
-        "university": "University X",
-        "degree": "Bachelor Degree",
-        "date": "22-01-2018",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        "university": "Nanyang Technological University",
+        "degree": "Bachelor of Business (Specialisation in Business Analytics)",
+        "date": "2019 - 2023",
+        "description": "Full-Time Programme"
       },
       {
         "id": 3,
-        "university": "University X",
-        "degree": "High School Degree",
-        "date": "22-01-2015",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        "university": "Tsinghua University",
+        "degree": "Department of Computer Science and Technology",
+        "date": "2022 - 2023",
+        "description": "Semester Exchange Programme"
       }
     ]
   },
@@ -28,16 +28,37 @@
     "professionalexp": [
       {
         "id": 1,
-        "company": "Company X",
-        "position": "Full stack Js developer",
-        "date": "22-01-2022",
+        "company": "Bytedance",
+        "position": "Software Engineer",
+        "date": "Jan 2023 - May 2023",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
       },
       {
         "id": 2,
-        "company": "Company X",
-        "position": "Web Developer",
-        "date": "22-01-2022",
+        "company": "Ensign InfoSecurity",
+        "position": "Cyber Security Consultant",
+        "date": "Aug 2022 - Dec 2022",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      },
+      {
+        "id": 3,
+        "company": "Centre of Strategic Infocomm Technologies",
+        "position": "Software Engineer",
+        "date": "May 2022 - July 2022",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      },
+      {
+        "id": 4,
+        "company": "Government Technology Agency",
+        "position": "Software Engineer",
+        "date": "May 2021 - July 2021",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+      },
+      {
+        "id": 5,
+        "company": "Beep Technologies",
+        "position": "Software Engineer",
+        "date": "May 2020 - July 2020",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
       }
     ]

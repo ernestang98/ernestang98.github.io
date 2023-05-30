@@ -15,11 +15,11 @@ function Nav() {
   };
 
   const changeBackground = () => {
-    if (window.scrollY >= 50) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
+    // if (window.scrollY >= 50) {
+    //   setNavbar(true);
+    // } else {
+    //   setNavbar(false);
+    // }
   };
 
   useEffect(() => {
@@ -28,10 +28,10 @@ function Nav() {
 
   return (
     <motion.div
-      initial={{ position: "relative" }}
-      animate={
-        navbar ? { position: "sticky", top: 0 } : { position: "relative" }
-      }
+      // initial={{ position: "relative" }}
+      // animate={
+      //   navbar ? { position: "sticky", top: 0 } : { position: "relative" }
+      // }
     >
       <div
         className={
@@ -66,7 +66,7 @@ function Nav() {
               Home
             </Link>
             <Link
-              to="Section2"
+              to="Education"
               spy={true}
               smooth={true}
               offset={-90}
@@ -74,10 +74,10 @@ function Nav() {
               activeClass="active"
               className="dark:bg-gray-900 navLink"
             >
-              Section2
+              Education
             </Link>
             <Link
-              to="Section3"
+              to="Experience"
               spy={true}
               smooth={true}
               offset={-90}
@@ -85,7 +85,7 @@ function Nav() {
               activeClass="active"
               className="dark:bg-gray-900 navLink"
             >
-              Section 3
+              Experience
             </Link>
             <Link
               to="Section4"
@@ -130,9 +130,9 @@ function Nav() {
         <div className=" dark:bg-gray-900 flex items-center h-screen px-4 w-80 sm:w-96 bg-[#F6F8FB] flex-col overflow-y-scroll hide-scrollbar shadow-2xl bg-opacity-60 backdrop-filter backdrop-blur-md">
           <div className="flex items-center justify-between w-full py-8 dark:bg-gray-900">
             <div className="flex items-center space-x-2 dark:bg-gray-900">
-              <img src={Logo} alt="John Doe" className="w-10 sm:w-12" />
+              {/* <img src={Logo} alt="John Doe" className="w-10 sm:w-12" /> */}
               <h3 className="dark:bg-gray-900 text-xl text-[#5C637C] font-light">
-                Your<span className="font-semibold">Name</span>
+                <span className="font-semibold">PotatoDev</span>
               </h3>
             </div>
 
@@ -159,7 +159,7 @@ function Nav() {
               Home
             </Link>
             <Link
-              to="Section2"
+              to="Education"
               spy={true}
               smooth={true}
               offset={-90}
@@ -168,10 +168,10 @@ function Nav() {
               className="dark:bg-gray-900 sidebar-link"
               onClick={() => setSidebar(false)}
             >
-              Section 2
+              Education
             </Link>
             <Link
-              to="Section3"
+              to="Experience"
               spy={true}
               smooth={true}
               offset={-90}
@@ -180,7 +180,7 @@ function Nav() {
               className="dark:bg-gray-900 sidebar-link"
               onClick={() => setSidebar(false)}
             >
-              Section 3
+              Experience
             </Link>
             <Link
               to="Section4"
