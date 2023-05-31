@@ -16,7 +16,7 @@ function ExperienceSection() {
                   style={{ left: "9px" }}
                 ></div>
                 <ul className="list-none m-0 p-0 border-gray-100">
-                  {data[1].professionalexp.map((exp, i) => (
+                  {data[0].professionalexp.map((exp, i) => (
                     <TimeLineItem
                       key={exp.id}
                       company={exp.company}

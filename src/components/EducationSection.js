@@ -1,7 +1,40 @@
-import TimeLineItem from "./TimeLineItem";
-import data from "../utils/data.json";
-function EducationSection() {
+import EducationTimeLineItem from "./EducationItem";
+import ntu from "../images/ntu.png"
+import th from "../images/tsinghua.png"
 
+function EducationSection() {
+  const data = [
+    {
+      "id": 1,
+      "university": "Nanyang Technological University",
+      "degree": "Bachelor of Engineering in Computer Science",
+      "date": "2019 - 2023",
+      "description": "Full-Time Programme",
+      "image": ntu,
+      "width": 100,
+      "height": 100,
+    },
+    {
+      "id": 2,
+      "university": "Nanyang Technological University",
+      "degree": "Bachelor of Business (Specialisation in Business Analytics)",
+      "date": "2019 - 2023",
+      "description": "Full-Time Programme",
+      "image": ntu,
+      "width": 100,
+      "height": 100,
+    },
+    {
+      "id": 3,
+      "university": "Tsinghua University",
+      "degree": "Department of Computer Science and Technology",
+      "date": "2022 - 2023",
+      "description": "Semester Exchange Programme",
+      "image": th,
+      "width": 100,
+      "height": 100,
+    }
+  ]
   return (
     <>
       <div className="dark:bg-gray-900 bg-[#ffffff] w-full" id="Education">
@@ -17,13 +50,16 @@ function EducationSection() {
                   style={{ left: "9px" }}
                 ></div>
                 <ul className="list-none m-0 p-0 border-gray-100">
-                  {data[0].education.map((edu, i) => (
-                    <TimeLineItem
+                  {data.map((edu, i) => (
+                    <EducationTimeLineItem
                       key={edu.id}
                       university={edu.university}
                       degree={edu.degree}
                       date={edu.date}
                       description={edu.description}
+                      image={edu.image}
+                      width={edu.width}
+                      height={edu.height}
                     />
                   ))}
                 </ul>

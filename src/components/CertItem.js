@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "../images/oscp.png";
 
 function CertItem({
   id,
@@ -24,12 +23,14 @@ function CertItem({
         noExternalLinkIcon
         noGradientUnderline
       >
-        <Image
-          src={Logo}
-          className="rounded-lg transition duration-200 hover:opacity-60"
-          height={300}
-          width={300}
-        />
+        <div className="h-1000 w-1000">
+          <Image
+            src={badge}
+            className="rounded-lg transition duration-200 hover:opacity-60"
+            height={300}
+            width={300}
+          />
+        </div>
       </Link>
     </article>
   );

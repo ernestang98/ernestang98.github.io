@@ -23,9 +23,9 @@ export default function Home() {
       <div className="flex flex-col dark:bg-gray-900">
         <Nav />
         <HomeSection />
-        <EducationSection />
         <ExperienceSection />
         <CertificationSection />
+        <EducationSection />
         {/* <Section4 /> */}
         <Footer />
       </div>

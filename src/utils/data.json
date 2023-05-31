@@ -1,34 +1,9 @@
 [
   {
-    "education": [
-      {
-        "id": 1,
-        "university": "Nanyang Technological University",
-        "degree": "Bachelor of Engineering in Computer Science",
-        "date": "2019 - 2023",
-        "description": "Full-Time Programme"
-      },
-      {
-        "id": 2,
-        "university": "Nanyang Technological University",
-        "degree": "Bachelor of Business (Specialisation in Business Analytics)",
-        "date": "2019 - 2023",
-        "description": "Full-Time Programme"
-      },
-      {
-        "id": 3,
-        "university": "Tsinghua University",
-        "degree": "Department of Computer Science and Technology",
-        "date": "2022 - 2023",
-        "description": "Semester Exchange Programme"
-      }
-    ]
-  },
-  {
     "professionalexp": [
       {
         "id": 1,
-        "company": "Bytedance",
+        "company": "ByteDance",
         "position": "Software Engineer",
         "date": "Jan 2023 - May 2023",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"

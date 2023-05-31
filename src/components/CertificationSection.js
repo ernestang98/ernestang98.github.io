@@ -1,6 +1,13 @@
 import CertItem from "./CertItem";
 import data from "../utils/data.json";
 import Marquee from 'react-fast-marquee';
+import oscp from "../images/oscp.png";
+import oswe from "../images/oswe.png";
+import osed from "../images/osed.png";
+import burp from "../images/burp.svg";
+import chfi from "../images/chfi.png";
+import ceh from "../images/ceh.png";
+import ccp from "../images/ccp.png";
 
 function CertificationSection() {
 
@@ -8,31 +15,43 @@ function CertificationSection() {
     {
       "id": 1,
       "name": "OffSec Certified Professional",
-      "badge": "https://firasjerbi.me/_next/static/images/airbnb_clone-69559d72c0ee495fd7876479179bcba1.png",
+      "badge": oscp,
       "url": "https://airbnb-nextjs-gamma.vercel.app/"
     },
     {
       "id": 2,
       "name": "OffSec Web Expert",
-      "badge": "https://firasjerbi.me/_next/static/images/airbnb_clone-69559d72c0ee495fd7876479179bcba1.png",
+      "badge": oswe,
       "url": "https://airbnb-nextjs-gamma.vercel.app/"
     },
     {
       "id": 3,
       "name": "OffSec Exploit Developer",
-      "badge": "https://firasjerbi.me/_next/static/images/airbnb_clone-69559d72c0ee495fd7876479179bcba1.png",
+      "badge": osed,
       "url": "https://airbnb-nextjs-gamma.vercel.app/"
     },
     {
       "id": 4,
-      "name": "Certified Ethical Hacker",
-      "badge": "https://firasjerbi.me/_next/static/images/airbnb_clone-69559d72c0ee495fd7876479179bcba1.png",
+      "name": "Burp Suite Certified Practitioner",
+      "badge": burp,
       "url": "https://airbnb-nextjs-gamma.vercel.app/"
     },
     {
-      "id": 3,
+      "id": 5,
       "name": "Computer Hacking Forensic Investigator",
-      "badge": "https://firasjerbi.me/_next/static/images/airbnb_clone-69559d72c0ee495fd7876479179bcba1.png",
+      "badge": chfi,
+      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+    },
+    {
+      "id": 6,
+      "name": "Certified Ethical Hacker",
+      "badge": ceh,
+      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+    },
+    {
+      "id": 7,
+      "name": "Certified Cloud Practitioner",
+      "badge": ccp,
       "url": "https://airbnb-nextjs-gamma.vercel.app/"
     }
   ]
@@ -53,7 +72,7 @@ function CertificationSection() {
                 ></div>
                 <>
                   <div className="grid grid-cols-1 gap-4">
-                    <Marquee direction="left" speed={20} autoFill={true} pauseOnHover={true}>
+                    <Marquee direction="left" speed={30} autoFill={true} pauseOnHover={true}>
                       {data.map((exp, i) => (
                         <CertItem
                           key={exp.id}
