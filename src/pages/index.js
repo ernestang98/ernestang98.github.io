@@ -26,7 +26,7 @@ export default function Home() {
         <ExperienceSection />
         <CertificationSection />
         <EducationSection />
-        {/* <Section4 /> */}
+        <Section4 />
         <Footer />
       </div>
     </div>

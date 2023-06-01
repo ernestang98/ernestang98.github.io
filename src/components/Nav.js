@@ -7,6 +7,7 @@ import { Link } from "react-scroll";
 import Toggle from "./Toggle";
 
 function Nav() {
+  const [open, setOpen] = useState(false);
   const [sidebar, setSidebar] = useState(false);
   const [navbar, setNavbar] = useState(false);
   const variants = {
@@ -53,62 +54,108 @@ function Nav() {
           </h3>
         </Link>
         <div className="flex dark:bg-gray-900  text-[#5C637C] items-center space-x-3">
-          <div className="items-center hidden space-x-4 dark:bg-gray-900 lg:flex">
+          <div className="items-center hidden space-x-4 dark:bg-gray-900 lg:flex mr-5">
             <Link
               to="Home"
               spy={true}
               smooth={true}
               offset={-110}
               duration={200}
-              activeClass="active"
-              className="dark:bg-gray-900 navLink"
+              activeClass="activeDISABLE"
+              className="navLink"
             >
               Home
             </Link>
+            <div className="flex justify-center z-1000">
+              <div onMouseLeave={() => setOpen(false)} className="dark:bg-gray-900 navLink relative">
+                <button
+                  onMouseOver={() => setOpen(true)}
+                  className="flex items-center rounded-md"
+                >
+                  <span className="">Whoami</span>
+                </button>
+                <ul
+                  className={`absolute right-0 w-40 py-2 mt-2 rounded-lg  ${
+                    open ? "block" : "hidden"
+                  }`}
+                >
+                  <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100  dark:bg-gray-900 bg-white rounded-md">
+                    <Link
+                      to="Experience"
+                      spy={true}
+                      smooth={true}
+                      offset={-90}
+                      duration={500}
+                      activeClass="active"
+                      className="dark:bg-gray-900 navLink2"
+                    >
+                      Experience
+                    </Link>
+                  </li>
+                  <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100 dark:bg-gray-900 bg-white rounded-md">
+                    <Link
+                      to="Certifications"
+                      spy={true}
+                      smooth={true}
+                      offset={-90}
+                      duration={500}
+                      activeClass="active"
+                      className="dark:bg-gray-900 navLink2"
+                    >
+                      Certifications
+                    </Link>
+                  </li>
+                  <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100  dark:bg-gray-900 bg-white rounded-md">
+                    <Link
+                      to="Education"
+                      spy={true}
+                      smooth={true}
+                      offset={-90}
+                      duration={500}
+                      activeClass="active"
+                      className="dark:bg-gray-900 navLink2"
+                    >
+                      Education
+                    </Link>
+                  </li>
+                  <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100 dark:bg-gray-900 bg-white rounded-md">
+                    <Link
+                      to="Projects"
+                      spy={true}
+                      smooth={true}
+                      offset={-90}
+                      duration={500}
+                      activeClass="active"
+                      className="dark:bg-gray-900 navLink2"
+                    >
+                      Projects
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <Link
-              to="Education"
+              to="asd"
               spy={true}
               smooth={true}
-              offset={-90}
-              duration={500}
+              offset={-110}
+              duration={200}
               activeClass="active"
-              className="dark:bg-gray-900 navLink"
+              className="navLink"
             >
-              Education
-            </Link>
-            <Link
-              to="Experience"
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-              activeClass="active"
-              className="dark:bg-gray-900 navLink"
-            >
-              Experience
-            </Link>
-            <Link
-              to="Section4"
-              spy={true}
-              smooth={true}
-              offset={-90}
-              duration={500}
-              activeClass="active"
-              className="dark:bg-gray-900 navLink"
-            >
-              Section 4
+              Research
             </Link>
 
             <Link
-              to="Section5"
+              to="asd"
               spy={true}
               smooth={true}
-              offset={-90}
-              duration={500}
+              offset={-110}
+              duration={200}
               activeClass="active"
-              className="dark:bg-gray-900 navLink"
+              className="navLink"
             >
-              Section 5
+              Blog
             </Link>
           </div>
           <Toggle />
@@ -183,7 +230,7 @@ function Nav() {
               Experience
             </Link>
             <Link
-              to="Section4"
+              to="Certifications"
               spy={true}
               smooth={true}
               offset={-90}
@@ -192,11 +239,11 @@ function Nav() {
               className="dark:bg-gray-900 sidebar-link"
               onClick={() => setSidebar(false)}
             >
-              Section 4
+              Certifications
             </Link>
 
             <Link
-              to="Section5"
+              to="Projects"
               spy={true}
               smooth={true}
               offset={-90}
@@ -205,7 +252,7 @@ function Nav() {
               className="dark:bg-gray-900 sidebar-link"
               onClick={() => setSidebar(false)}
             >
-              Section 5
+              Projects
             </Link>
           </div>
         </div>
