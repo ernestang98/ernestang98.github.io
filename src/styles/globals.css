@@ -83,4 +83,32 @@ body {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
   }
+
+  .post-body ul,
+  ol {
+    font-size: 110%;
+    line-height: 2.3;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+
+  .post-body pre {
+    background: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 2.3;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  }
+  
+  .card-page {
+    padding: 15px 30px;
+    margin-top: 30px;
+  }
 }
+
+

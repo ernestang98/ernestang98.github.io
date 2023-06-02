@@ -9,7 +9,7 @@ function CertItem({
   url,
 }) {
   return (
-    <article className="flex max-w-lg flex-col-reverse rounded-xl border-[1px] border-tertiary bg-secondary/50 py-4 px-6 transition duration-200 hover:border-accent mr-20">
+    <div className="flex max-w-lg flex-col-reverse rounded-xl border-[1px] border-tertiary bg-secondary/50 py-4 px-6 transition duration-200 hover:border-accent mr-20">
       <Link href={url} noExternalLinkIcon noGradientUnderline>
         <div className="mt-8 flex-col space-y-4">
           <h2 className="text-xs font-semibold transition duration-200 hover:opacity-60 text-center text-custom-dark">
@@ -19,11 +19,11 @@ function CertItem({
       </Link>
       <Link
         href={url}
-        className="aspect-[16/9] overflow-hidden rounded-2xl drop-shadow-md"
+        className="aspect-[16/9] rounded-2xl drop-shadow-md"
         noExternalLinkIcon
         noGradientUnderline
       >
-        <div className="h-1000 w-1000">
+        <div>
           <Image
             src={badge}
             className="rounded-lg transition duration-200 hover:opacity-60"
@@ -32,7 +32,7 @@ function CertItem({
           />
         </div>
       </Link>
-    </article>
+    </div>
   );
 }
 

@@ -3,8 +3,9 @@ import Logo from "../images/logojohndoe.png";
 import { RiMenuLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
-import { Link } from "react-scroll";
+import { Link as RsLink } from "react-scroll";
 import Toggle from "./Toggle";
+import Link from 'next/link';
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -41,7 +42,7 @@ function Nav() {
             : "flex bg-[#F6F8FB] items-center  dark:bg-gray-900 justify-between w-full py-8 px-8 sm:px-16 z-50"
         }
       >
-        <Link
+        <RsLink
           to="Home"
           smooth={true}
           offset={-110}
@@ -52,10 +53,11 @@ function Nav() {
           <h3 className="dark:bg-gray-900 text-2xl text-[#5C637C] font-light hidden md:flex">
             <span className="font-semibold dark:bg-gray-900">PotatoDev</span>
           </h3>
-        </Link>
+        </RsLink>
         <div className="flex dark:bg-gray-900  text-[#5C637C] items-center space-x-3">
           <div className="items-center hidden space-x-4 dark:bg-gray-900 lg:flex mr-5">
-            <Link
+            <Link className="navLink" href="/">Whoami</Link>
+            {/* <RsLink
               to="Home"
               spy={true}
               smooth={true}
@@ -65,8 +67,8 @@ function Nav() {
               className="navLink"
             >
               Home
-            </Link>
-            <div className="flex justify-center z-1000">
+            </RsLink> */}
+            {/* <div className="flex justify-center z-1000">
               <div onMouseLeave={() => setOpen(false)} className="dark:bg-gray-900 navLink relative">
                 <button
                   onMouseOver={() => setOpen(true)}
@@ -80,7 +82,7 @@ function Nav() {
                   }`}
                 >
                   <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100  dark:bg-gray-900 bg-white rounded-md">
-                    <Link
+                    <RsLink
                       to="Experience"
                       spy={true}
                       smooth={true}
@@ -90,10 +92,10 @@ function Nav() {
                       className="dark:bg-gray-900 navLink2"
                     >
                       Experience
-                    </Link>
+                    </RsLink>
                   </li>
                   <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100 dark:bg-gray-900 bg-white rounded-md">
-                    <Link
+                    <RsLink
                       to="Certifications"
                       spy={true}
                       smooth={true}
@@ -103,10 +105,10 @@ function Nav() {
                       className="dark:bg-gray-900 navLink2"
                     >
                       Certifications
-                    </Link>
+                    </RsLink>
                   </li>
                   <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100  dark:bg-gray-900 bg-white rounded-md">
-                    <Link
+                    <RsLink
                       to="Education"
                       spy={true}
                       smooth={true}
@@ -116,10 +118,10 @@ function Nav() {
                       className="dark:bg-gray-900 navLink2"
                     >
                       Education
-                    </Link>
+                    </RsLink>
                   </li>
                   <li className="flex w-full items-center px-3 py-2 text-sm hover:bg-gray-100 dark:bg-gray-900 bg-white rounded-md">
-                    <Link
+                    <RsLink
                       to="Projects"
                       spy={true}
                       smooth={true}
@@ -129,12 +131,12 @@ function Nav() {
                       className="dark:bg-gray-900 navLink2"
                     >
                       Projects
-                    </Link>
+                    </RsLink>
                   </li>
                 </ul>
               </div>
-            </div>
-            <Link
+            </div> */}
+            {/* <RsLink
               to="asd"
               spy={true}
               smooth={true}
@@ -143,10 +145,12 @@ function Nav() {
               activeClass="active"
               className="navLink"
             >
-              Research
-            </Link>
-
-            <Link
+              <div>
+                <Link href="/research">Research</Link>
+              </div>
+            </RsLink> */}
+            <Link className="navLink" href="/research">Research</Link>
+            <RsLink
               to="asd"
               spy={true}
               smooth={true}
@@ -156,7 +160,7 @@ function Nav() {
               className="navLink"
             >
               Blog
-            </Link>
+            </RsLink>
           </div>
           <Toggle />
           <button
@@ -193,7 +197,7 @@ function Nav() {
 
           {/* Mobile First Menu */}
           <div className="flex flex-col items-center w-full py-5 space-y-2 dark:bg-gray-900">
-            <Link
+            <RsLink
               to="Home"
               spy={true}
               smooth={true}
@@ -204,8 +208,8 @@ function Nav() {
               onClick={() => setSidebar(false)}
             >
               Home
-            </Link>
-            <Link
+            </RsLink>
+            <RsLink
               to="Education"
               spy={true}
               smooth={true}
@@ -216,8 +220,8 @@ function Nav() {
               onClick={() => setSidebar(false)}
             >
               Education
-            </Link>
-            <Link
+            </RsLink>
+            <RsLink
               to="Experience"
               spy={true}
               smooth={true}
@@ -228,8 +232,8 @@ function Nav() {
               onClick={() => setSidebar(false)}
             >
               Experience
-            </Link>
-            <Link
+            </RsLink>
+            <RsLink
               to="Certifications"
               spy={true}
               smooth={true}
@@ -240,9 +244,9 @@ function Nav() {
               onClick={() => setSidebar(false)}
             >
               Certifications
-            </Link>
+            </RsLink>
 
-            <Link
+            <RsLink
               to="Projects"
               spy={true}
               smooth={true}
@@ -253,7 +257,7 @@ function Nav() {
               onClick={() => setSidebar(false)}
             >
               Projects
-            </Link>
+            </RsLink>
           </div>
         </div>
 
