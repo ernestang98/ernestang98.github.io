@@ -150,7 +150,8 @@ function Nav() {
               </div>
             </RsLink> */}
             <Link className="navLink" href="/research">Research</Link>
-            <RsLink
+            <Link className="navLink" href="/blog">Blog</Link>
+            {/* <RsLink
               to="asd"
               spy={true}
               smooth={true}
@@ -160,9 +161,9 @@ function Nav() {
               className="navLink"
             >
               Blog
-            </RsLink>
+            </RsLink> */}
           </div>
-          <Toggle />
+          {/* <Toggle /> */}
           <button
             className="lg:hidden dark:bg-gray-900 bg-white border border-transparent hover:shadow-md hover:border-gray-200 focus:outline-none font-medium text-[#5C637C] p-3.5 rounded-lg text-xl"
             onClick={() => setSidebar(true)}
