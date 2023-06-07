@@ -6,14 +6,26 @@ date: "2020-12-27"
 
 # Security Advisories and Publications
 
-### CVE-2023-33690 (Pending)
+### CVE-2023-33690
 
-- SonicJS v0.7.0 Authenticated Local File Inclusion/Directory Traversal
+- Product: SonicJS (Traditional/Legacy CMS)
 
-### CVE-2023-33691 (Pending)
+- Version: v0.5.4 - v0.7.0
 
-- Peppermint.sh v0.2.4 Unauthenticated Local File Inclusion/Directory Traversal
+- Vulnerability: Local File Inclusion/Directory Traversal
 
-### CVE-2023-33693 (Pending)
+### CVE-2023-33693
 
-- EasyPlayerPro-Win v3.6.19.0823 Structured Exception Handling (SEH) Overflow
+- Product: EasyPlayerPro-Win
+
+- Version: v3.2.19.0106 - v3.6.19.0823
+
+- Vulnerability: Structured Exception Handling (SEH) Overflow
+
+### CVE-2023-XXXXX
+
+- Product: Leantime
+
+- Version: v0.9.5-alpha - v2.3.23
+
+- Vulnerability: Stored Cross Site Scripting (XSS)

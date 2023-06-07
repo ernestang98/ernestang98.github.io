@@ -29,7 +29,6 @@ const Post = ({ post, preview }) => {
 export const getStaticProps = async ({ params, preview = false }) => {
   const cfClient = client
   const { slug } = params
-  console.log(slug)
   const response = await cfClient.getEntries({
     content_type: 'blogPost',
     'fields.slug': slug

@@ -6,7 +6,7 @@
         "company": "ByteDance",
         "position": "Software Engineer",
         "date": "Jan 2023 - May 2023",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur"
+        "description": "Worked on Bytedance Global Edge (BGE) which is Bytedance’s Kubernetesedge computing platform, providing Kubernetes as a Service organisation-wideand enabling Bytedance to deploy applications across every Bytedance Point ofPresence (PoP) location around the world. Developed a feature which allowsusers to receive phone calls on top of messages in lark as notifications over trig-gered alerts from Prometheus Alertmanagers. Developed a feature which al-lows users to automatically synchronise alerts across newly added/removed Ku-bernetes clusters under a BGE project. Developed using React.js (Typescript),Go, and PostgreSQL. Tested using Go-Testing, Testify and GoMock. Deployedusing Gitlab, Jenkins, Docker, Kubernetes, Helm, Kustomize and ArgoCD."
       },
       {
         "id": 2,

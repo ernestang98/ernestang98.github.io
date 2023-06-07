@@ -15,7 +15,6 @@ import favicon from "../images/logojohndoe.png";
 export default function Research({
     content,
   }) {
-    console.log(content)
   return (
     <div className="flex flex-col dark:bg-gray-900">
       <Head>
