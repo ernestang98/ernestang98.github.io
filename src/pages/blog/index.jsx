@@ -4,7 +4,7 @@
 import { client } from "../../utils/contentful_client"
 import PostCard from "../../components/PostCard"
 import BlogCard from "../../components/BlogCard"
-import Nav from "../../components/Nav"
+import Nav from "../../components/website/Nav"
 
 const Posts = ({ posts }) => {
   return (

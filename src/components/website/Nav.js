@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import Logo from "../images/logojohndoe.png";
+import Logo from "../../images/logojohndoe.png";
 import { RiMenuLine } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoMdClose } from "react-icons/io";
 import { Link as RsLink } from "react-scroll";
-import Toggle from "./Toggle";
+import Toggle from "../Toggle";
 import Link from 'next/link';
 
 function Nav() {

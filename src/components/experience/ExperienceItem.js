@@ -1,6 +1,6 @@
 import React from "react";
 
-function TimeLineItem({
+function ExperienceItem({
   university,
   degree,
   date,
@@ -27,7 +27,7 @@ function TimeLineItem({
               </p>
 
               <hr />
-              <p className="text-sm font-medium leading-snug tracking-wide text-custom-dark text-opacity-100 pt-5 text-justify">
+              <div className="text-sm font-medium leading-snug tracking-wide text-custom-dark text-opacity-100 pt-5 text-justify">
                 <ul className="list-disc ml-5">
                   {
                     description.map((exp, i) => (
@@ -35,7 +35,7 @@ function TimeLineItem({
                     ))
                   }
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
         </div>
@@ -44,4 +44,4 @@ function TimeLineItem({
   );
 }
 
-export default TimeLineItem;
+export default ExperienceItem;

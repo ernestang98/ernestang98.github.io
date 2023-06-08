@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
+import Footer from "../components/website/Footer";
+import Nav from "../components/website/Nav";
 
 import favicon from "../images/logojohndoe.png";
-import HomeSection from "../components/HomeSection";
-import EducationSection from "../components/EducationSection";
-import ExperienceSection from "../components/ExperienceSection";
-import CertificationSection from "../components/CertificationSection";
+import HomeSection from "../components/home/HomeSection";
+import EducationSection from "../components/education/EducationSection";
+import ExperienceSection from "../components/experience/ExperienceSection";
+import CertificationSection from "../components/certification/CertificationSection";
 import Section4 from "../components/Section4";
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <ExperienceSection />
         <CertificationSection />
         <EducationSection />
-        <Section4 />
+        {/* <Section4 /> */}
         <Footer />
       </div>
     </div>

@@ -1,4 +1,4 @@
-import TimeLineItem from "./TimeLineItem2";
+import ExperienceItem from "./ExperienceItem";
 function ExperienceSection() {
   const data = {
     "professionalexp": [
@@ -11,6 +11,7 @@ function ExperienceSection() {
           "Worked on an internal Kubernetes as a Service platform",
           "Performed backend development work using Golang and PostgreSQL",
           "Performed frontend development work using React (TypeScript) and Redux",
+          "Performed infrastucture development work using Prometheus and Pyroscope",
           "Deployed on Kubernetes using Jenkins, Helm, Kustomize, and ArgoCD",
         ]
       },
@@ -24,7 +25,7 @@ function ExperienceSection() {
           "Assisted in Source Code Review projects (White Box)",
           "Assisted in Red Teaming projects",
           "Assisted in drafting reports and conducting post reviews",
-          "Assisted in Ensign's OSCP Bootcamp",
+          "Assisted in Ensign's OSCP Bootcamp (instructor, challenge setter)",
           "Assisted in developing software to manage Ensign's Cyber Range",
           "Assisted in developing an Operational Technology CTF Challenge"
         ]
@@ -62,9 +63,9 @@ function ExperienceSection() {
         "date": "May 2020 - July 2020",
         "description": [
           "Venture-backed startup building the universal low-code IOT automation platform for any business",
-          "Worked on Beep's suite of custom Point-of-Sale (POS) software",
+          "Worked on Beep's custom Point-of-Sale (POS) software",
           "Performed mobile development (Android) work using Kotlin, Java, and C++", 
-          "Performed embedded development work using Kotlin and Java",
+          "Performed IOT software development work using Kotlin and Java",
         ]
       },
     ]
@@ -85,7 +86,7 @@ function ExperienceSection() {
                 ></div>
                 <ul className="list-none m-0 p-0 border-gray-100">
                   {data.professionalexp.map((exp, i) => (
-                    <TimeLineItem
+                    <ExperienceItem
                       key={exp.id}
                       company={exp.company}
                       position={exp.position}

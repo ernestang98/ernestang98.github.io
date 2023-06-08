@@ -1,13 +1,12 @@
 import CertItem from "./CertItem";
-import data from "../utils/data.json";
 import Marquee from 'react-fast-marquee';
-import oscp from "../images/oscp.png";
-import oswe from "../images/oswe.png";
-import osed from "../images/osed.png";
-import burp from "../images/burp.svg";
-import chfi from "../images/chfi.png";
-import ceh from "../images/ceh.png";
-import ccp from "../images/ccp.png";
+import oscp from "../../images/oscp.png";
+import oswe from "../../images/oswe.png";
+import osed from "../../images/osed.png";
+import burp from "../../images/burp.svg";
+import chfi from "../../images/chfi.png";
+import ceh from "../../images/ceh.png";
+import ccp from "../../images/ccp.png";
 
 function CertificationSection() {
 
@@ -16,43 +15,43 @@ function CertificationSection() {
       "id": 1,
       "name": "OffSec Certified Professional",
       "badge": oscp,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://www.credential.net/0caa3e6d-db56-4110-932a-0eb1b48513f8#gs.01v6qq"
     },
     {
       "id": 2,
       "name": "OffSec Web Expert",
       "badge": oswe,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://www.credential.net/93b5b0c1-f02f-4c92-848d-75b48fbcee46"
     },
     {
       "id": 3,
       "name": "OffSec Exploit Developer",
       "badge": osed,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://www.credential.net/2c2d9c47-53c8-4b3e-bf3a-46a25d6f0e0b#gs.01v6n3"
     },
     {
       "id": 4,
       "name": "Burp Suite Certified Practitioner",
       "badge": burp,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://portswigger.net/web-security/e/c/3efcd21ef203e55d"
     },
     {
       "id": 5,
       "name": "Computer Hacking Forensic Investigator",
       "badge": chfi,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://aspen.eccouncil.org/VerifyBadge?&type=certification&a=vtQYqbmJ6LJ6bh0X/eSiQs0/x6D285mTdk+SmuLvvHQ="
     },
     {
       "id": 6,
       "name": "Certified Ethical Hacker",
       "badge": ceh,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://aspen.eccouncil.org/VerifyBadge?type=certification&a=s9UWSIkgOw4RSNF/Mw7OE6rn/47CWMm6RchbKHZqRkY="
     },
     {
       "id": 7,
       "name": "Certified Cloud Practitioner",
       "badge": ccp,
-      "url": "https://airbnb-nextjs-gamma.vercel.app/"
+      "url": "https://www.credly.com/badges/d88cd3b7-f820-4388-a455-5dd59d8c3fbd"
     }
   ]
 

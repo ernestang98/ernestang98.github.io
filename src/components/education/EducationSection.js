@@ -1,6 +1,6 @@
 import EducationTimeLineItem from "./EducationItem";
-import ntu from "../images/ntu.png"
-import th from "../images/tsinghua.png"
+import ntu from "../../images/ntu.png"
+import th from "../../images/tsinghua.png"
 
 function EducationSection() {
   const data = [

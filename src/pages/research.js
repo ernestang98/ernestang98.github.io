@@ -7,8 +7,8 @@ import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
 
-import Footer from "../components/Footer";
-import Nav from "../components/Nav";
+import Footer from "../components/website/Footer";
+import Nav from "../components/website/Nav";
 
 import favicon from "../images/logojohndoe.png";
 

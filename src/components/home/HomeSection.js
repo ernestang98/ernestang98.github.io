@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import SocialButtons from "./SocialButtons";
-import Title from "./Title";
+import SocialButtons from "../SocialButtons";
+import Title from "../Title";
 
 function HomeSection() {
   return (
